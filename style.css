@@ -1,0 +1,55 @@
+.side-title{
+    font-family: 'Space Mono', monospace;
+    font-size: 100%;
+}
+
+.main-section{
+    display: flex;
+    height: 100vh;
+}
+.first-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Scarecrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.second-section{
+    width: 100vw;
+    font-family: 'Space Mono', monospace;
+}
+.second-section h1{
+    font-size: 400%;
+}
+.second-section p{
+    font-size: 250%;
+}
+.second-section button{
+    font-family: 'Space Mono', monospace;
+    padding: 2%;
+    background-color: #333333;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .first-section{
+        background-size: contain;
+        height: 45vh;
+    }
+    .second-section{
+        height: 55vh;
+    }
+    .second-section h1{
+        font-size: 270%;
+    }
+    .second-section p{
+        font-size: 130%;
+    }
+  }
